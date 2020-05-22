@@ -7,7 +7,7 @@ Write in assembler a program that simulates the operation of a DCL cipher machin
 The machine consists of three ciphering reels: left `L`, right `R` and inverting `T`. Reels `L` and `R` can rotate and each of them can be in one of 42 positions marked with signs from the allowed set. The machine replaces the input text with the output text by performing a permutation string for each character. If the reel `L` case is in the `l` position and the reel `R` case is in the `r` position, the machine performs the following permutation
 
 ```math
-Qr^(-1)R-1Qr Ql-1L-1Ql T Ql-1LQl Qr-1RQr
+Q_r^(-1)R^(-1)Q_r Q_l^(-1)L^(-1)Q_l T Q_l^(-1)LQ_l Q_r^(-1)RQ_r
 ```
 
 where `L`, `R` and `T` are reel permutations given by program parameters. The encryption and decryption processes are interchangeable with each other.
