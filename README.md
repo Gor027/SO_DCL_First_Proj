@@ -12,7 +12,7 @@ Q_r^(-1)R^(-1)Q_r Q_l^(-1)L^(-1)Q_l T Q_l^(-1)LQ_l Q_r^(-1)RQ_r
 
 where `L`, `R` and `T` are reel permutations given by program parameters. The encryption and decryption processes are interchangeable with each other.
 
-`Q` permutations perform cyclic character shifts according to their ASCII codes. For example, `Q_5` replaces 1 for 5, 2 for 6, 9 for =, = for A, A for E, B for F, Z for 4, and Q = for 1, = 2 for>,? on K. Permutation `Q_1` is identity. Permutation `T` is a combination of 21 disjoint two-element cycles (`TT` assembly is identity). `X-1` means inverse permutation to `X` permutation. Permutation assembly is performed from right to left.
+`Q` permutations perform cyclic character shifts according to their ASCII codes. For example, `Q_5` replaces 1 for 5, 2 for 6, 9 for =, = for A, A for E, B for F, Z for 4, and Q = for 1, = 2 for>,? on K. Permutation `Q_1` is identity. Permutation `T` is a combination of 21 disjoint two-element cycles (`TT` assembly is identity). `X^(-1)` means inverse permutation to `X` permutation. Permutation assembly is performed from right to left.
 
 Before encrypting each character, the bobbin rotates one position (cyclically according to the position ASCII codes), i.e. its position changes, for example, from 1 to 2, with? to @, from A to B, from B to C, from Z to 1. If the drum reaches R so. rotational position, the drum also rotates one position. Rotational positions are L, R, T.
 
